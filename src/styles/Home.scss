@@ -1,0 +1,79 @@
+@import '_variables.scss';
+
+.home__page {
+    background-color: $background;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $screen-xs-max) {
+        flex-direction: column-reverse;
+    }
+    @media only screen and (min-width: $screen-sm-min) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        gap: 30px;
+        padding-left: 30px;
+    }
+    
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        padding-left: 100px;
+        gap: 50px;
+    }
+    
+    @media only screen and (min-width: $screen-lg-min) {
+        padding-left: 150px;
+        gap: 70px;
+    }
+    &--content {
+        @media only screen and (max-width: $screen-sm-max) {
+            width: 80%;
+            text-align: center;
+        }
+        @media only screen and (min-width: $screen-md-min) {
+            width: 60%;
+        }
+        h2 {
+            font-size: 45px;
+            margin: 0;
+            @media only screen and (max-width: $screen-xs-max) and  (min-width: $screen-md-min){
+                font-size: 45px; 
+            }
+            @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                font-size: 40px;
+            }
+        }
+        h3{
+            margin-top: 10px;
+            font-size: 25px;
+            color: $text-hover;
+        }
+        p {
+            line-height: 25px;
+            font-size: 20px;
+        }
+    }
+
+    .img {
+        background-image: url(../../static/img/image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media only screen and (max-width: $screen-xs-max) {
+            width: 100vw;
+            height: 52vh;
+        }
+        @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+            width: 47vh;
+            height: 500px;
+        }
+        @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            width: 400px;
+            height: 435px;
+        }
+        @media only screen and (min-width: $screen-lg-min) {
+            width: 700px;
+            height: 600px;
+        }
+    }
+}

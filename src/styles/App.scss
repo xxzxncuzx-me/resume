@@ -1,0 +1,107 @@
+@import '_variables.scss';
+  
+@media only screen and (max-width: $screen-xs-max) {
+    
+    .menu.visible {
+        display: inherit;
+        flex-direction: column;
+        background-color: $navbar;
+        height: 100vh;
+        width: 50vw;  
+        position: absolute; 
+        padding-top: 60px;
+        z-index: 2;
+        a {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 20px;
+        } 
+    }
+
+    .menu.hidden {
+        display: none;
+    }
+
+    .hamburger {
+        margin-left: 10px;
+        padding: 10px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+        .burger {
+            width: 2em;
+            height: 0.3rem;
+            background: $text-color;
+            border-radius: 0.5em;
+            z-index: 3;
+          }
+          .hamburger:hover {
+            color: $text-hover;
+        } 
+    }
+
+      .burger.clicked:nth-child(1){
+        transform: rotate(45deg) translate(0.55em, 1.02em);
+        transition: ease-out 0.5s;
+      }
+      
+      .burger.clicked:nth-child(2) {
+        transform: scale(0.1);
+        transition: ease-out 0.5s;
+      }
+      
+      .burger.clicked:nth-child(3) {
+        transform: rotate(135deg) translate(-0.05em, 0.5em);
+        transition: ease-out 0.5s;
+      }
+      
+      .burger.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+      }   
+}
+
+@media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .navbar {
+        width: $sm-width;
+        margin: 0 auto;
+    }
+} 
+
+@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .navbar {
+        width: $md-width;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media only screen and (min-width: $screen-lg-min) {
+    .navbar {
+        width: $lg-width;
+        margin: 0 auto;
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    margin: 0;
+    @media only screen and (min-width: $screen-sm-min) {
+        justify-content: space-around;
+        }
+    a {
+        display: block;
+        text-transform: uppercase;
+    }
+    a:focus {
+        color: $text-hover;
+    }
+}
+

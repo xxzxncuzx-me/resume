@@ -1,0 +1,44 @@
+@import '_variables.scss';
+
+.resume {
+    display: flex;
+    border-radius: 3px;
+    @media only screen and (min-width: 770px) and (max-width: $screen-sm-max) {
+       width: 90%;
+       margin: 0 auto;
+    } 
+    
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        width: $md-width;
+        margin: 0 auto;
+    }
+
+    @media only screen and (min-width: $screen-lg-min) {
+        width: $lg-width;
+        margin: 0 auto;
+    }
+}
+
+.download {
+    display: block;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 3px;
+    margin: 30px auto;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: $background;
+    @media only screen and (max-width: $screen-sm-max) {
+        width: 250px;
+     } 
+     
+     @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+         width: 300px;
+     }
+ 
+     @media only screen and (min-width: $screen-lg-min) {
+         width: 350px;
+     }
+
+}

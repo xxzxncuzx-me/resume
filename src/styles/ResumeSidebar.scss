@@ -1,0 +1,106 @@
+@import '_variables.scss';
+
+.sidebar {
+    background-color: $text-color;
+    color: $background; 
+    @media only screen and (max-width: $screen-xs-max) {
+        width: 180px;
+        padding-top: 35px;
+    }
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        width: 200px;
+        padding-top: 40px;
+    } 
+    
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        width: 220px;
+        padding-top: 40px;
+    }
+
+    @media only screen and (min-width: $screen-lg-min) {
+        width: 250px;
+        padding-top: 40px;
+    }
+    
+    &__main {
+        @media only screen and (max-width: $screen-sm-max) {
+            padding-left: 20px;
+        } 
+        
+        @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            padding-left: 35px;
+        }
+    
+        @media only screen and (min-width: $screen-lg-min) {
+            padding-left: 40px;
+        }
+        h3 {
+            border-bottom: 1px solid #FFF5FD;
+            font-weight: 500;
+        }
+
+        .info {
+            ul {
+            padding-left: 0;
+            padding-right: 40px;
+                li {
+                    list-style-type: none;    
+                    line-height: 20px;  
+                    h5 {
+                        margin-bottom: 0;
+                        margin-top: 10px;
+                        @media only screen and (min-width: $screen-md-min) { 
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                    p {
+                        margin-top: 5px;
+                    }
+                    a {
+                        color: $background;
+                        &:hover {
+                            color: $text-hover;
+                        }
+                    } 
+                    a, p {
+                      @media only screen and (max-width: $screen-sm-max) {
+                            font-size: 13px;
+                        } 
+                        
+                        @media only screen and (min-width: $screen-md-min) { 
+                            font-size: 15px;
+                        }  
+                    }
+                    
+                }
+            }
+        }
+        .soft__skills, .language {
+            ul {
+                padding-left: 15px;
+                li {
+                    line-height: 27px;
+                    @media only screen and (max-width: $screen-sm-max) {
+                        font-size: 14px;
+                    } 
+                    
+                    @media only screen and (min-width: $screen-md-min) { 
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+   
+    .photo {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        background-image: url(../../static/img/image.jpg);
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

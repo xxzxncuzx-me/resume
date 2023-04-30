@@ -1,0 +1,83 @@
+@import '_variables.scss';
+
+.overview {
+    background-color: $background;
+    @media only screen and (max-width: $screen-sm-max) {
+        padding: 0 20px;
+    } 
+    
+    @media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        padding: 0 35px;
+    }
+
+    @media only screen and (min-width: $screen-lg-min) {
+        padding: 0 40px;
+    }
+     h1{
+        margin-bottom: 0;
+     }
+     h3 {
+        margin-top: 0;
+     }
+     h2 {
+        border-bottom: 1.5px solid $text-color;
+     }
+
+    .skills__container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @media only screen and (max-width: $screen-xs-max) {
+           align-items: center; 
+        } 
+        ul {
+            @media only screen and (max-width: $screen-xs-max) {
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    margin: 0 auto;
+                }
+             } 
+             @media only screen and (min-width: $screen-sm-min) {
+                padding-left: 20px;
+                margin-bottom: 0;
+             } 
+            
+        }
+    }
+
+    .experience__block {
+        h3 {
+            margin: 0;
+        }
+        span {
+            margin-top: 5px;
+            color: $navbar;
+        }
+        p {
+            color: $text-color;
+            margin-top: 10px;
+        }
+    }
+
+    .education {
+        ul {
+            padding: 0;
+            li {
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                h4 {
+                    margin: 0;
+                }
+                span {
+                    color: #005A8D;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
