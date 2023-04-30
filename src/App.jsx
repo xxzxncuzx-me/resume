@@ -45,7 +45,7 @@ export default () => {
   return <div>
     <nav className='navbar' ref={sideNavRef}> 
       <div className={menu}>
-        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/home'>Home</NavLink>
         <NavLink to='/portfolio'>Portfolio</NavLink>
         <NavLink to='/resume'>Resume</NavLink>
         <NavLink to='/contact'>Contact</NavLink>
