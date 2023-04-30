@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.195e9dad.css",
+    "main.js": "/resume/static/js/main.82b83f10.js",
+    "static/js/787.dc9ee2bf.chunk.js": "/resume/static/js/787.dc9ee2bf.chunk.js",
+    "static/media/NotoSans-ExtraLight.ttf": "/resume/static/media/NotoSans-ExtraLight.3d6596bd0d8f05b1aac6.ttf",
+    "static/media/NotoSans-SemiBold.ttf": "/resume/static/media/NotoSans-SemiBold.390cedcb4939e62769c4.ttf",
+    "static/media/NotoSans-Medium.ttf": "/resume/static/media/NotoSans-Medium.9c5af221c3004f7e3f49.ttf",
+    "static/media/NotoSans-Light.ttf": "/resume/static/media/NotoSans-Light.29f79bace817d68bcc6e.ttf",
+    "static/media/image.jpg": "/resume/static/media/image.5c1c95bf02c4255416a1.jpg",
+    "static/media/it-school.jpg": "/resume/static/media/it-school.cb1dbb672df34a344e24.jpg",
+    "static/media/fashion-blog-2.jpg": "/resume/static/media/fashion-blog-2.200fabb9eca749d3551a.jpg",
+    "static/media/fashion-blog.jpg": "/resume/static/media/fashion-blog.5cf832e6a9d46f72f073.jpg",
+    "static/media/it-school-2.jpg": "/resume/static/media/it-school-2.edabfc6943b46e3996bc.jpg",
+    "static/media/it-school-3.jpg": "/resume/static/media/it-school-3.59c922383a6a173ee482.jpg",
+    "static/media/github.svg": "/resume/static/media/github.ebd452bf402237ef25876cdcac686676.svg",
+    "static/media/instagram.svg": "/resume/static/media/instagram.116ad97e1f8e0638fcb7d5aed6800697.svg",
+    "static/media/whatsapp.svg": "/resume/static/media/whatsapp.83f494119e2a84b5a3e00aa411c0a25e.svg",
+    "static/media/telegram.svg": "/resume/static/media/telegram.321403849160a46062e6396da2e29e74.svg",
+    "static/media/gmail.svg": "/resume/static/media/gmail.7df8d589eacd0a7f40f5685b6e551065.svg",
+    "static/media/linkedin-in.svg": "/resume/static/media/linkedin-in.42f56d2e4ae6f93ca987e172233e3da8.svg",
+    "static/media/phone-solid.svg": "/resume/static/media/phone-solid.b4a074baa24a40414433c87293d74020.svg",
+    "static/media/facebook.svg": "/resume/static/media/facebook.d0e6c35f87cabc4c3d016b72ba214d1f.svg",
+    "index.html": "/resume/index.html",
+    "main.195e9dad.css.map": "/resume/static/css/main.195e9dad.css.map",
+    "main.82b83f10.js.map": "/resume/static/js/main.82b83f10.js.map",
+    "787.dc9ee2bf.chunk.js.map": "/resume/static/js/787.dc9ee2bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.195e9dad.css",
+    "static/js/main.82b83f10.js"
+  ]
+}
