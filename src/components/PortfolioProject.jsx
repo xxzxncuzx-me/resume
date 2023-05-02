@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/PortfolioProject.scss'
+import './PortfolioProject.scss'
 
 export default ({name, description, link}) =>  {
     return <div className="project__info">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import '../styles/Portfolio.scss'
+import './Portfolio.scss'
 import PortfolioProjects from "../components/PortfolioProject.jsx";
 import projects from "../utils/projects.js"
 

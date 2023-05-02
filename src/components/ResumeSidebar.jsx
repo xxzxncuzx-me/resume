@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/ResumeSidebar.scss'
+import './ResumeSidebar.scss'
 
 export default () =>  {
     return <div className="sidebar">

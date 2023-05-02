@@ -9,22 +9,22 @@ body {
   color: $text-color;
   @font-face {
     font-family: 'Noto Sans', sans-serif;
-    src: url(../../static/fonts/NotoSans-ExtraLight.ttf);
+    src: url(../static/fonts/NotoSans-ExtraLight.ttf);
   }
   
   @font-face {
     font-family: 'Noto Sans', sans-serif;
-    src: url(../../static/fonts/NotoSans-Light.ttf);
+    src: url(../static/fonts/NotoSans-Light.ttf);
   }
   
   @font-face {
     font-family: 'Noto Sans', sans-serif;
-    src: url(../../static/fonts/NotoSans-Medium.ttf);
+    src: url(../static/fonts/NotoSans-Medium.ttf);
   }
   
   @font-face {
     font-family: 'Noto Sans', sans-serif;
-    src: url(../../static/fonts/NotoSans-SemiBold.ttf);
+    src: url(../static/fonts/NotoSans-SemiBold.ttf);
   }
 }
 

@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import './styles/App.scss';
+import './App.scss';
 import { Route, Routes, NavLink } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Portfolio from './pages/Portfolio.jsx'

@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/ResumeOverview.scss'
+import './ResumeOverview.scss'
 import texts from '../utils/texts.js'
 import projects from "../utils/projects.js";
 

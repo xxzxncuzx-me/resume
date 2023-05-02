@@ -7,7 +7,7 @@ import Telegram from '../icons/telegram.svg'
 import WhatsApp from '../icons/whatsapp.svg'
 import Instagram from '../icons/instagram.svg'
 import Facebook from '../icons/facebook.svg'
-import '../styles/Contact.scss'
+import './Contact.scss'
 
 export default () =>  {
     return <div className="contact">
