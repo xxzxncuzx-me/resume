@@ -1,7 +1,6 @@
 import React from "react";
 import './ResumeOverview.scss'
 import texts from '../utils/texts.js'
-import projects from "../utils/projects.js";
 
 export default () =>  {
     return <div className="overview">
@@ -32,16 +31,13 @@ export default () =>  {
             </div>
             <div className="experience">
                 <h2>Academic Experience</h2>
-                <div className="experience__block">
-                    <h3>IT School Project</h3>
-                    <span>Front End Developer</span>
-                    <p>{projects[0].description}</p>
-                </div>
-                <div className="experience__block">
-                    <h3>Fashion Blog Project</h3>
-                    <span>Front End Developer</span>
-                    <p>{projects[1].description}</p>
-                </div>
+                {texts.projects.map(project => {
+                    return  <div key={project.id} className="experience__block">
+                        <h3>{project.name}</h3>
+                        <span>Front End Developer</span>
+                        <p>{project.description}</p>
+                    </div>
+                })}
             </div>
             <div className="education">
                 <h2>Education</h2>

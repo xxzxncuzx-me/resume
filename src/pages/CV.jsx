@@ -1,9 +1,7 @@
 import React from "react";
-import './Resume.scss'
+import './CV.scss'
 import ResumeSidebar from "../components/ResumeSidebar";
 import ResumeOverview from "../components/ResumeOverview";
-
-
 
 export default () =>  {
     return <div>

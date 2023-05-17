@@ -2,41 +2,27 @@ import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Portfolio.scss'
-import PortfolioProjects from "../components/PortfolioProject.jsx";
-import projects from "../utils/projects.js"
-
-import FashionBlog from '../icons/fashion-blog.jpg'
-import FashionBlog2 from '../icons/fashion-blog-2.jpg'
-import ItSchool from '../icons/it-school.jpg'
-import ItSchool2 from '../icons/it-school-2.jpg'
-import ItSchool3 from '../icons/it-school-3.jpg'
+import texts from "../utils/texts.js";
 
 export default () =>{ 
     return <div className="portfolio">
-            <div className="project">
-                <PortfolioProjects name={projects[0].name} description={projects[0].description} link={projects[0].link} /> 
-                <Carousel className="main-slide">   
+        {texts.projects.map(project => {
+            return <div key={project.id} className="projects">
+                <div className="project__info">
                     <div>
-                        <img src={ItSchool}/>
+                        <h2>{project.name}</h2>
+                        <p>{project.description}</p>
                     </div>
-                    <div>
-                        <img src={ItSchool2}/>
-                    </div>
-                    <div>
-                        <img src={ItSchool3}/>
-                    </div>
+                    <a className="link-button" href={project.link} target="_blank">GitHub</a>
+                </div>
+                <Carousel className="main-slide"> 
+                    {project.images.map(img => {
+                        return <div key={img.src}>
+                            <img src={img.src}/>
+                        </div> 
+                    })}  
                 </Carousel>
             </div>
-            <div className="project">
-                <PortfolioProjects name={projects[1].name} description={projects[1].description} link={projects[0].link}/>
-                <Carousel className="main-slide">   
-                    <div>
-                        <img src={FashionBlog}/>
-                    </div>
-                    <div>
-                        <img src={FashionBlog2}/>
-                    </div>
-                </Carousel>
-            </div>
+        })}
     </div>
 }
