@@ -10,23 +10,15 @@ export default () =>  {
                 <p>{texts.about}</p>
             </div>
             <div className="hard__skills">
-                <h2>Skills</h2>
+                <h2>{texts.skills.caption}</h2>
                 <div className="skills__container">
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                        <li>Webpack</li>
-                    </ul>
-                    <ul>
-                        <li>Gulp</li>
-                        <li>Node.js</li>
-                        <li>Git</li>
-                    </ul>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>HTML</li>
-                        <li>CSS, SASS/SCSS</li>
-                    </ul>
+                    {texts.skills.groups.map(group => {
+                        return <ul key={group.id}> 
+                            {group.skill.map(skill => {
+                                return <li>{skill}</li>
+                            })}
+                        </ul>
+                    })}
                 </div>
             </div>
             <div className="experience">
@@ -40,16 +32,14 @@ export default () =>  {
                 })}
             </div>
             <div className="education">
-                <h2>Education</h2>
+                <h2>{texts.education.caption}</h2>
                 <ul>
-                    <li>
-                        <h4>Taras Shevchenko National University of Kyiv, Institute of Law</h4>
-                        <span>2020-present</span>
-                    </li>
-                    <li>
-                        <h4>Front End Pro at Hillel It School</h4>
-                        <span>2022-2023</span>
-                    </li>
+                    {texts.education.place.map(place => {
+                        return <li key={place.name}>
+                            <h4>{place.name}</h4>
+                            <span>{place.year}</span>
+                        </li>
+                    })}
                 </ul>
             </div>
     </div>

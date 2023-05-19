@@ -16,6 +16,79 @@ export default{
     title: "Junior Frontend developer",
     about: "Junior Frontend Developer skilled in JavaScript and React. Seeking an entry-level position to apply knowledge gained through self-learning and academic coursework to contribute to a team-oriented environment. Eager to collaborate with professionals and continue growing skills in web development while contributing to meaningful projects.",
 
+    skills: {
+        caption: 'Skills',
+        groups: [
+            {
+                id: 'column 1',
+                skill:  ['JavaScript', 'React.js', 'Webpack']
+            },
+            {
+                id: 'column 2',
+                skill:  ['Gulp', 'Node.js', 'Git']
+            },
+            {
+                id: 'column 3',
+                skill:  ['Bootstrap', 'HTML', 'CSS, SASS/SCSS']
+            }
+        ]
+       },
+       experience: {
+        caption: 'Academic Experience',
+       },
+       education: {
+        caption: 'Education',
+        place: [
+            {
+                name: 'Taras Shevchenko National University of Kyiv, Institute of Law',
+                year: '2020-present'
+            },
+            {
+                name: 'Front End Pro at Hillel It School',
+                year: '2022-2023'
+            }
+        ]
+       },
+    contact: {
+        caption: 'Contact',
+        location: {
+            name: 'Location',
+            data: 'Kyiv, Ukraine'
+        },
+        list:  [ 
+            {
+                name: 'Gmail',
+                url: 'mailto:i.fedorova4321@gmail.com',
+                caption: 'i.fedorova4321@gmail.com'   
+            },
+            {
+                name: 'Phone',
+                url: 'tel:+380995691633',
+                caption: '+380 99 569 16 33' 
+            },
+            {
+                name: 'Git',
+                url: 'https://github.com/xxzxncuzx-me',
+                caption: 'xxzxncuzx_me' 
+            },
+            {
+                name: 'LinkedIn' ,
+                url: 'https://www.linkedin.com/in/iryna-fedorova-075978272',
+                caption: 'xxzxncuzx_me' 
+            }
+        ]  
+    },
+
+    softSkills: {
+        caption: 'Soft Skills',
+        skills: ['Time management', 'Problem solving', 'Adaptivity', 'Creativity', 'Teamwork', 'Willing to learn']
+    },
+    
+    languages: {
+        caption: 'Language',
+        language: ['Native Ukrainian', 'English B2']
+    },
+       
     projects: [
         { 
             id: '1', 
