@@ -3,7 +3,7 @@ import './App.scss';
 import { Route, Routes, NavLink } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Portfolio from './pages/Portfolio.jsx'
-import CV from './pages/CV.jsx'
+import Resume from './pages/Resume.jsx'
 import Contact from './pages/Contact.jsx'
 
 
@@ -44,9 +44,9 @@ export default () => {
   return <div>
     <nav className='navbar' ref={sideNavRef}> 
       <div className={menu}>
-        <NavLink to='/home'>Home</NavLink>
+        <NavLink to='/'>Home</NavLink>
         <NavLink to='/portfolio'>Portfolio</NavLink>
-        <NavLink to='/cv'>Resume</NavLink>
+        <NavLink to='/resume'>Resume</NavLink>
         <NavLink to='/contact'>Contact</NavLink>
       </div>
       <div className="hamburger" onClick={updateMenu}>
@@ -56,9 +56,9 @@ export default () => {
       </div>
     </nav>
     <Routes>
-      <Route path='/home' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='/portfolio' element={<Portfolio/>}/>
-      <Route path='/cv' element={<CV/>}/>
+      <Route path='/resume' element={<Resume/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='*' element={<p>Page not found</p>} />
     </Routes>

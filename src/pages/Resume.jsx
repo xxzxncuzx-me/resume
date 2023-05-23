@@ -1,5 +1,5 @@
 import React from "react";
-import './CV.scss'
+import './Resume.scss'
 import ResumeSidebar from "../components/ResumeSidebar";
 import ResumeOverview from "../components/ResumeOverview";
 
