@@ -22,7 +22,7 @@ export default () =>  {
                 <h3>{texts.softSkills.caption}</h3>
                 <ul>
                     {texts.softSkills.skills.map(skill => {
-                        return <li>{skill}</li>
+                        return <li key={skill}>{skill}</li>
                     })}
                 </ul>
             </div>
@@ -30,7 +30,7 @@ export default () =>  {
                 <h3>{texts.languages.caption}</h3>
                 <ul>
                     {texts.languages.language.map(language => {
-                        return <li>{language}</li>
+                        return <li key={language}>{language}</li>
                     })}
                 </ul>
             </div>

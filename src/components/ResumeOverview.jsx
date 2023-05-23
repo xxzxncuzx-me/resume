@@ -15,7 +15,7 @@ export default () =>  {
                     {texts.skills.groups.map(group => {
                         return <ul key={group.id}> 
                             {group.skill.map(skill => {
-                                return <li>{skill}</li>
+                                return <li key={skill}>{skill}</li>
                             })}
                         </ul>
                     })}
@@ -34,12 +34,19 @@ export default () =>  {
             <div className="education">
                 <h2>{texts.education.caption}</h2>
                 <ul>
-                    {texts.education.place.map(place => {
-                        return <li key={place.name}>
-                            <h4>{place.name}</h4>
-                            <span>{place.year}</span>
-                        </li>
-                    })}
+                    <li>
+                        <h4>{texts.education.place.name}</h4>
+                        <span>{texts.education.place.year}</span>
+                    </li>
+                </ul>
+            </div>
+            <div className="education">
+                <h2>{texts.additional.caption}</h2>
+                <ul>
+                    <li>
+                        <h4>{texts.additional.place.name}</h4>
+                        <span>{texts.additional.place.year}</span>
+                    </li>
                 </ul>
             </div>
     </div>

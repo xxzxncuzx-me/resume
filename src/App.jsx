@@ -41,7 +41,6 @@ export default () => {
     }
   }
   
-  
   return <div>
     <nav className='navbar' ref={sideNavRef}> 
       <div className={menu}>
@@ -57,7 +56,7 @@ export default () => {
       </div>
     </nav>
     <Routes>
-      <Route path='/home' element={<Home />}/>
+      <Route path='/home' element={<Home/>}/>
       <Route path='/portfolio' element={<Portfolio/>}/>
       <Route path='/cv' element={<CV/>}/>
       <Route path='/contact' element={<Contact/>}/>

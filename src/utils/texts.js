@@ -38,16 +38,17 @@ export default{
        },
        education: {
         caption: 'Education',
-        place: [
-            {
+        place: {
                 name: 'Taras Shevchenko National University of Kyiv, Institute of Law',
                 year: '2020-present'
-            },
-            {
-                name: 'Front End Pro at Hillel It School',
-                year: '2022-2023'
             }
-        ]
+       },
+       additional: {
+        caption: 'Additional cources and trainings',
+        place: {
+                name: 'Front End Pro at Hillel It School',
+                year: '2023'
+            }
        },
     contact: {
         caption: 'Contact',
